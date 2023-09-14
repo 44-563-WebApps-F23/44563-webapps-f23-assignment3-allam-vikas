@@ -65,5 +65,21 @@ vaction spots
             <td>20</td>
         </tr>
     </table>
+    <hr>
+    <h3>Code Snippet</h3>
+    <blockquote>Detect HTTP or HTTPS then force HTTPS in JavaScript</blockquote>
+    <a href="https://stackoverflow.com/questions/4723213/detect-http-or-https-then-force-https-in-javascript">https://stackoverflow.com/questions/4723213/detect-http-or-https-then-force-https-in-javascript</a>
+    <pre>
+        if (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off'
+        || $_SERVER['SERVER_PORT'] == 443) {
+    
+      // HTTPS
+    
+    } else {
+    
+      // HTTP
+    
+    }
+    </pre>
     </body>
 </html>
